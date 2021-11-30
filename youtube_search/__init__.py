@@ -3,7 +3,7 @@ import urllib.parse
 import json
 
 
-class YoutubeSearch:
+class Q1YoutubeSearch:
     def __init__(self, search_terms: str, max_results=None):
         self.search_terms = search_terms
         self.max_results = max_results
