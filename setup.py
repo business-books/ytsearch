@@ -14,7 +14,7 @@ setup(
     description="Perform YouTube video searches without the API",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/joetats/youtube_search",
+    url="https://github.com/business-books/ytsearch",
     author="Joe Tatusko",
     author_email="tatuskojc@gmail.com",
     license="MIT",
