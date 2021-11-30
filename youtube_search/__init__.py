@@ -11,8 +11,9 @@ class YoutubeSearch:
 
     def _search(self):
         encoded_search = urllib.parse.quote_plus(self.search_terms)
-        BASE_URL = "https://yutube.com"
-        url = f"{BASE_URL}/results?search_query={encoded_search}&sp=EggIBRABGAMoAQ%253D%253D"
+        encoded_search = encoded_search + '&sp=EggIBRABGAMoAQ%253D%253D'
+        BASE_URL = "https://youtube.com"
+        url = f"{BASE_URL}/results?search_query={encoded_search}"
         response = requests.get(url).text
         while "ytInitialData" not in response:
             response = requests.get(url).text
