@@ -2,6 +2,7 @@ import requests
 import urllib.parse
 import json
 
+#upd 2021-12-11
 
 class Q1YoutubeSearch:
     def __init__(self, search_terms: str, max_results=None):
